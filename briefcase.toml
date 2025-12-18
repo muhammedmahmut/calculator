@@ -1,0 +1,6 @@
+[app]
+name = "calculator"
+formal_name = "Calculator"
+bundle = "com.muhammed"
+version = "0.1.0"
+description = "Simple calculator made with BeeWare"

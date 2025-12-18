@@ -1,0 +1,18 @@
+[build-system]
+requires = ["briefcase"]
+build-backend = "briefcase.build_system"
+
+[tool.briefcase]
+project_name = "Calculator"
+bundle = "com.muhammed"
+version = "0.1.0"
+url = "https://github.com/muhammedmahmut/calculator"
+license = "MIT"
+author = "Muhammed"
+author_email = "aboqassm2525@gmail.com"
+
+[tool.briefcase.app.calculator]
+formal_name = "Calculator"
+description = "Simple Calculator App"
+sources = ["src/calculator"]
+requires = ["toga"]
