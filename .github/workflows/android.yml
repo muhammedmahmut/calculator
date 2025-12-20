@@ -42,7 +42,7 @@ jobs:
             -storepass ${{ secrets.KEYSTORE_PASSWORD }} \
             -keypass ${{ secrets.KEY_PASSWORD }} \
             $APK \
-            ${{ secrets.KEY_ALIAS }}
+            $calculatorkey
 
       - name: Upload Signed APK
         uses: actions/upload-artifact@v4
