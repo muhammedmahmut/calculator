@@ -14,7 +14,7 @@ jobs:
 
       - name: Test secrets
         run: |
-        if [ -z "${{ secrets.KEYSTORE_PASSWORD }}" ]; then
+        if [ -z "${{ secrets.KEYSTORE_PASSWORD }}" ]; EMPTY
          echo "❌ KEYSTORE_PASSWORD is EMPTY"
         else
          eecho"✅ KEYSTORE_PASSWORD is SET"
