@@ -12,6 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Test secrets
+        run: |
+        if [ -z "${{ secrets.KEYSTORE_PASSWORD }}" ]; then
+         echo "❌ KEYSTORE_PASSWORD is EMPTY"
+        else
+         eecho"✅ KEYSTORE_PASSWORD is SET"
+        fi
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
